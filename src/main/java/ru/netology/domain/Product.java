@@ -7,6 +7,15 @@ public class Product {
     private String name;
     private String cost;
 
+    public Product() {
+    }
+
+    public Product(int id, String name, String cost) {
+        this.id = id;
+        this.name = name;
+        this.cost = cost;
+    }
+
     public int getId() {
         return id;
     }
@@ -30,4 +39,5 @@ public class Product {
     public void setCost(String cost) {
         this.cost = cost;
     }
+
 }
