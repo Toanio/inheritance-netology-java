@@ -7,7 +7,7 @@ import ru.netology.repository.ProductRepository;
 
 public class ProductManager {
     private ProductRepository repository;
-   // private Product[] products = new Product[0];
+    // private Product[] products = new Product[0];
 
     public ProductManager(ProductRepository repository) {
         this.repository = repository;
@@ -54,12 +54,12 @@ public class ProductManager {
                 return true;
             }
         }
-        if(product instanceof Smartphone){
-            Smartphone smartphone=(Smartphone) product;
-            if(smartphone.getName().equalsIgnoreCase(search)){
+        if (product instanceof Smartphone) {
+            Smartphone smartphone = (Smartphone) product;
+            if (smartphone.getName().equalsIgnoreCase(search)) {
                 return true;
             }
-            if(smartphone.getManufacturer().equalsIgnoreCase(search)){
+            if (smartphone.getManufacturer().equalsIgnoreCase(search)) {
                 return true;
             }
         }

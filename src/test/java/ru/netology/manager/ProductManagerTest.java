@@ -54,6 +54,7 @@ class ProductManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
     void shouldFindBookByAuthor() {
 
@@ -62,6 +63,7 @@ class ProductManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
     void shouldFindPhoneByName() {
 
@@ -70,6 +72,7 @@ class ProductManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
     void shouldFindPhoneByManufacturer() {
 
@@ -78,8 +81,9 @@ class ProductManagerTest {
 
         assertArrayEquals(expected, actual);
     }
+
     @Test
-    void shouldNotFindAnyProducts(){
+    void shouldNotFindAnyProducts() {
         Product[] actual = manager.searchBy("Fan");
         Product[] expected = new Product[]{};
 
