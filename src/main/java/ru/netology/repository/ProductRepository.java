@@ -8,14 +8,12 @@ public class ProductRepository {
     public void save(Product product) {
         int length = products.length + 1;
         Product[] tmp = new Product[length];
-
         System.arraycopy(products, 0, tmp, 0, products.length);
-
         int lastIndex = tmp.length - 1;
         tmp[lastIndex] = product;
         products = tmp;
     }
-    public void removeById(int id){
+    public void  removeById(int id){
         int length = products.length - 1;
         Product[] tmp = new Product[length];
         int index = 0;
