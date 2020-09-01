@@ -13,6 +13,6 @@ public class Book extends Product {
     }
 
     public boolean matches(String search) {
-      return super.matches(search) || search.equalsIgnoreCase(author);
+        return super.matches(search) || search.equalsIgnoreCase(author);
     }
 }
