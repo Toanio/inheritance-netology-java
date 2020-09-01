@@ -12,4 +12,7 @@ public class Book extends Product {
         return author;
     }
 
+    public boolean matches(String search) {
+      return super.matches(search) || search.equalsIgnoreCase(author);
+    }
 }
